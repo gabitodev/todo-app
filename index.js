@@ -55,10 +55,10 @@ const addTodo = () => {
 	
 	// Add the classes to the HTML Elements
 	div.classList.add('group', 'grow', 'flex', 'flex-row', 'justify-between');
-	listItem.classList.add('flex', 'flex-row', 'text-slate-800');
+	listItem.classList.add('flex', 'flex-row', 'text-slate-800', 'dark:text-slate-50');
 	todo.classList.add('p-4', 'break-words', 'grow');
 	deleteIcon.classList.add('delete-icon', 'w-12', 'md:w-14', 'hidden', 'group-hover:flex', 'group-hover:justify-center', 'group-hover:items-center', 'cursor-pointer', 'bg-red-500', 'origin-left');
-	checkIcon.classList.add('check-icon', 'w-12', 'md:w-14', 'flex', 'justify-center', 'items-center', 'cursor-pointer', 'border-l', 'border-slate-300', 'hover:bg-green-300', 'transition', 'duration-300', 'easy-in-out');
+	checkIcon.classList.add('check-icon', 'w-12', 'md:w-14', 'flex', 'justify-center', 'items-center', 'cursor-pointer', 'border-l', 'border-slate-300', 'dark:border-slate-400', 'hover:bg-green-300', 'transition', 'duration-300', 'easy-in-out');
 
 	// Append the elemets
 	deleteIcon.appendChild(deleteIconSvg);
@@ -156,14 +156,14 @@ ul.addEventListener('click', event => {
 			if (!todo.classList.contains('line-through')) {
 				checkIcon.classList.add('bg-green-400');
 				checkIcon.classList.remove('hover:bg-green-300')
-				todo.classList.add('line-through', 'text-slate-400');
+				todo.classList.add('line-through', 'text-slate-400', 'dark:text-slate-600');
 				todo.classList.remove('text-slate-800');
 				todoCount();
 				localStorage.setItem('todoList', ul.innerHTML);
 			} else {
 				checkIcon.classList.remove('bg-green-400');
 				checkIcon.classList.add('hover:bg-green-300')
-				todo.classList.remove('line-through', 'text-slate-400');
+				todo.classList.remove('line-through', 'text-slate-400', 'dark:text-slate-600');
 				todo.classList.add('text-slate-800');
 				todoCount();
 				localStorage.setItem('todoList', ul.innerHTML);
