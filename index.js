@@ -55,7 +55,7 @@ const addTodo = () => {
 	
 	// Add the classes to the HTML Elements
 	div.classList.add('group', 'grow', 'flex', 'flex-row', 'justify-between');
-	listItem.classList.add('flex', 'flex-row', 'text-slate-800', 'dark:text-slate-50');
+	listItem.classList.add('flex', 'flex-row');
 	todo.classList.add('p-4', 'break-words', 'grow');
 	deleteIcon.classList.add('delete-icon', 'w-12', 'md:w-14', 'hidden', 'group-hover:flex', 'group-hover:justify-center', 'group-hover:items-center', 'cursor-pointer', 'bg-red-500', 'origin-left');
 	checkIcon.classList.add('check-icon', 'w-12', 'md:w-14', 'flex', 'justify-center', 'items-center', 'cursor-pointer', 'border-l', 'border-slate-300', 'dark:border-slate-400', 'hover:bg-green-300', 'transition', 'duration-300', 'easy-in-out');
