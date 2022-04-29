@@ -1,4 +1,4 @@
-# todo-app 🎇
+# todo-app 📝
 ## A simple and intuitive todo app. 
 ### Made with HTML, CSS, Tailwind and JavaScript.
 Simple todo app that let you write down task and save it in the browser.
