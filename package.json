@@ -4,7 +4,7 @@
   "description": "A simple and intuitive todo app",
   "main": "index.js",
   "scripts": {
-    "build-tailwind": "npx tailwindcss -i ./src/output.css -o ./index.css --watch"
+    "tailwind-build": "npx tailwindcss -i ./src/output.css -o ./index.css --watch"
   },
   "repository": {
     "type": "git",
