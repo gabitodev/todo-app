@@ -155,16 +155,14 @@ ul.addEventListener('click', event => {
 			const checkIcon = element.parentElement.parentElement;
 			if (!todo.classList.contains('line-through')) {
 				checkIcon.classList.add('bg-green-400');
-				checkIcon.classList.remove('hover:bg-green-300')
+				checkIcon.classList.remove('hover:bg-green-300');
 				todo.classList.add('line-through', 'text-slate-400', 'dark:text-slate-600');
-				todo.classList.remove('text-slate-800');
 				todoCount();
 				localStorage.setItem('todoList', ul.innerHTML);
 			} else {
 				checkIcon.classList.remove('bg-green-400');
-				checkIcon.classList.add('hover:bg-green-300')
+				checkIcon.classList.add('hover:bg-green-300');
 				todo.classList.remove('line-through', 'text-slate-400', 'dark:text-slate-600');
-				todo.classList.add('text-slate-800');
 				todoCount();
 				localStorage.setItem('todoList', ul.innerHTML);
 			}
