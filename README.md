@@ -3,7 +3,7 @@
 ### Made with HTML, CSS, Tailwind and JavaScript.
 Simple todo app that let you write down task and save it in the browser.
 
-This web app let you add tasks, deletes tasks and mark as complete. Includes a validation for the input. Additionally it has a counter of how much task do you have, how many are completed and how many are incomplete.
+This web app let you add tasks, deletes tasks and mark as complete. Includes a validation for the input. Additionally it has a counter of how many tasks do you have, how many are completed and how many are incomplete.
 
 **Dark mode compatible.**
 
